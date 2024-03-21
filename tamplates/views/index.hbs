@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>headerlink}}
+</head>
+<body>
+  {{>navbar}}
+    <!-- mian header -->
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto ">
+                <div class="row">
+                    <div class="col-md-6 col-12 main-header_left">
+                        <p>welcome to wetahear app</p>
+                        <h1>Get the latest <span class="text_clr">Weather</span> info of our city</h1>
+                        <a href="/weather" ><button>check now</button></a>
+                    </div>
+                    <div class="col-md-6 col-12 main-header_right">
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://images.unsplash.com/photo-1558191053-8edcb01e1da3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class=" w-100" alt=>
+                            </div>
+                            <div class="carousel-item">
+                              <img src="https://images.unsplash.com/photo-1600502281976-e0e31b326509?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class=" w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="https://images.unsplash.com/photo-1541363111435-5c1b7d867904?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class=" w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+   {{>footer}}
+  <script>
+    const myCarouselElement = document.querySelector('#carouselExampleIndicators')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 1000,
+  touch:true,
+  cycle: true,
+
+});
+  </script>    
+
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>headerlink}}
+</head>
+<body>
+    {{>navbar}}
+
+    <!-- mian header -->
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto ">
+                <div class="row">
+                    <div class="col-md-6 col-12 main-header_left error-page">
+                        <figure>
+                            <img class="img-fluid" src="https://static-00.iconduck.com/assets.00/404-page-not-found-illustration-2048x998-yjzeuy4v.png">
+                        </figure>
+                  
+                        <p>welcome to aliya's app</p>
+                        <h1> {{errorMgs}} </h1>
+                        <a href="/" ><button>Go Back</button></a>
+                    </div>
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    {{>footer}}
+
+</body>
+</html>
